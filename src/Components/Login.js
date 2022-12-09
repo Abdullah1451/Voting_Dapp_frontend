@@ -42,7 +42,7 @@ function Login(props) {
         if(toString(otpVal)?.length>=4)
         {
             respOtp = await axios({
-                url: "http://localhost:5001/auth/verify",
+                url: "https://quaint-bandanna-bear.cyclic.app/verify",
                 method: "post",
                 data: {
                     otp: otpVal,
@@ -66,7 +66,7 @@ function Login(props) {
 
     
 
-   
+
 
     return (
         <div className='Login'>
