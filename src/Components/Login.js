@@ -17,7 +17,7 @@ function Login(props) {
         if(email?.length>8)
         {
             respOtp = await axios({
-                url: "http://localhost:5001/auth/",
+                url: "https://quaint-bandanna-bear.cyclic.app/auth/",
                 method: "post",
                 data: {
                     email: email,
