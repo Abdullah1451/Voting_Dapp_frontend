@@ -17,7 +17,7 @@ function Login(props) {
         if(email?.length>8)
         {
             respOtp = await axios({
-                url: "https://quaint-bandanna-bear.cyclic.app/auth/",
+                url: "https://voting-dapp-verification.onrender.com/auth/",
                 method: "post",
                 data: {
                     email: email,
@@ -42,7 +42,7 @@ function Login(props) {
         if(toString(otpVal)?.length>=4)
         {
             respOtp = await axios({
-                url: "https://quaint-bandanna-bear.cyclic.app/auth/verify",
+                url: "https://voting-dapp-verification.onrender.com/auth/verify",
                 method: "post",
                 data: {
                     otp: otpVal,
